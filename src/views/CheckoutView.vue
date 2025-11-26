@@ -6,8 +6,8 @@ const cartStore = useCartStore()
 const customerName = ref('')
 const customerPhone = ref('')
 const message = ref('')
-const showSuccess = ref(false) // ⭐️ SUCCESS POPUP STATE
-
+const showSuccess = ref(false) 
+  
 // BACKEND URL
 const apiBase = 'https://express-backend-9cfm.onrender.com'
 

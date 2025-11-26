@@ -9,7 +9,6 @@ export const useCartStore = defineStore('cart', () => {
     if (found) {
       found.quantity = (found.quantity || 0) + 1
     } else {
-      // copy data and store current availableSpaces for later update
       cart.value.push({ ...lesson, quantity: 1 })
     }
   }
@@ -17,7 +16,6 @@ export const useCartStore = defineStore('cart', () => {
   function removeFromCart(id) {
     const item = cart.value.find((i) => i.id === id)
     if (!item) return
-    // restore local lesson spaces in UI is handled in HomeView where we decreased availableSpaces when adding
     cart.value = cart.value.filter((i) => i.id !== id)
   }
 

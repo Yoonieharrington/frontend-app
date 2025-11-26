@@ -29,8 +29,7 @@ import { useCartStore } from './stores/cartStore'
 const cartStore = useCartStore()
 </script>
 
-<style>
-/* GLOBAL */
+
 body {
   margin: 0;
   background: #f3f4f6;

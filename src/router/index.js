@@ -8,7 +8,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(), // <-- use hash history for GitHub Pages
+  history: createWebHashHistory(), 
   routes,
 });
 

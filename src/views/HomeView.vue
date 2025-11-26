@@ -11,7 +11,7 @@ const lessons = ref([]);
 const searchQuery = ref("");
 const sortOption   = ref("");
 
-// BACKEND URL (your Render backend)
+
 const API_URL = "https://express-backend-9cfm.onrender.com/lessons";
 
 async function loadLessons() {
